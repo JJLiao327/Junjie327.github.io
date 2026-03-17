@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JunJie Liao - Academic Profile</title>
+    <meta name="description" content="Academic profile of JunJie Liao - Data Science Junior @ Beijing Normal University">
+    <link rel="icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .contact-item-hover {
+            transition: all 0.2s;
+        }
+
+        .contact-item-hover:hover {
+            color: #0284c7;
+            transform: translateX(2px);
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #0ea5e9, #38bdf8);
+            border-radius: 2px;
+        }
+
+        .nav-link {
+            transition: all 0.2s;
+        }
+
+        .badge-primary {
+            background: rgba(14, 165, 233, 0.1);
+            color: #0ea5e9;
+            transition: background 0.2s;
+        }
+
+        .badge-primary:hover {
+            background: rgba(14, 165, 233, 0.2);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-100">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-50 shadow-sm border-b border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-primary font-display tracking-tight">JunJie Liao</span>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:space-x-6">
+                    <a href="#about" class="nav-link inline-flex items-center px-0 py-0 h-16 border-b-2 border-primary text-sm font-medium text-gray-900">About</a>
+                    <a href="#education" class="nav-link inline-flex items-center px-0 py-0 h-16 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Education</a>
+                    <a href="#research" class="nav-link inline-flex items-center px-0 py-0 h-16 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Research</a>
+                    <a href="#publications" class="nav-link inline-flex items-center px-0 py-0 h-16 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Publications</a>
+                    <a href="#awards" class="nav-link inline-flex items-center px-0 py-0 h-16 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Awards</a>
+                    <a href="#experience" class="nav-link inline-flex items-center px-0 py-0 h-16 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Experience</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- About Section -->
+        <section id="about" class="py-8 pt-10 scroll-mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white shadow rounded-lg overflow-visible card-hover">
+                    <div class="md:grid md:grid-cols-[minmax(0,280px)_1fr]">
+                        <!-- Left Sidebar -->
+                        <div class="md:border-r md:border-gray-200 md:bg-gray-50/50 p-6 md:pr-8 flex flex-col items-center">
+                            <!-- Profile Photo Placeholder -->
+                            <div class="h-56 w-56 relative overflow-hidden rounded-full mb-3 bg-gradient-to-br from-sky-400 to-blue-500 flex items-center justify-center">
+                                <span class="text-8xl text-white font-bold">L</span>
+                            </div>
+
+                            <!-- Info -->
+                            <div class="w-full max-w-[260px] flex flex-col items-center gap-1.5 text-gray-600 text-sm mt-2 mb-6">
+                                <p class="inline-flex items-center justify-center gap-2">
+                                    <svg class="w-4 h-4 flex-shrink-0 text-gray-500" fill="currentColor" viewBox="0 0 448 512"><path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"/></svg>
+                                    Beijing Normal University
+                                </p>
+                                <p class="inline-flex items-center justify-center gap-2">
+                                    <svg class="w-4 h-4 flex-shrink-0 text-gray-500" fill="currentColor" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+                                    Beijing, China
+                                </p>
+                                <p class="inline-flex items-center justify-center gap-2">
+                                    <svg class="w-4 h-4 flex-shrink-0 text-gray-500" fill="currentColor" viewBox="0 0 512 512"><path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"/></svg>
+                                    Junior Year
+                                </p>
+                            </div>
+
+                            <!-- Contact Links -->
+                            <div class="grid grid-cols-2 gap-x-4 gap-y-2 w-max max-w-[260px]">
+                                <a href="mailto:junjieliao327@mail.bnu.edu.cn" class="contact-item-hover text-primary inline-flex items-center gap-2 text-sm leading-tight">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+                                    Email
+                                </a>
+                                <a href="tel:+8613536036391" class="contact-item-hover text-primary inline-flex items-center gap-2 text-sm leading-tight">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 512 512"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
+                                    Phone
+                                </a>
+                                <a href="#" class="contact-item-hover text-primary inline-flex items-center gap-2 text-sm leading-tight">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="contact-item-hover text-primary inline-flex items-center gap-2 text-sm leading-tight">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+                                    Scholar
+                                </a>
+                                <a href="#" class="contact-item-hover text-primary inline-flex items-center gap-2 text-sm leading-tight">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                                    LinkedIn
+                                </a>
+                                <a href="#" class="contact-item-hover text-primary inline-flex items-center gap-2 text-sm leading-tight">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                                    Twitter
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Main Content -->
+                        <div class="p-6 md:p-8 md:pl-8">
+                            <div class="text-3xl font-bold text-gray-900 mb-2">Good to see you!</div>
+                            <p class="text-sm text-gray-600 mb-4">I am <span class="font-semibold text-gray-900">JunJie Liao</span>, a junior student at Beijing Normal University majoring in <span class="font-semibold">Data Science and Big Data Technology</span>.</p>
+
+                            <div class="mt-6 space-y-3">
+                                <div class="flex items-start gap-2">
+                                    <span class="text-primary mt-1">•</span>
+                                    <p class="text-sm text-gray-700"><span class="font-semibold">GPA:</span> 3.6/4.0</p>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <span class="text-primary mt-1">•</span>
+                                    <p class="text-sm text-gray-700"><span class="font-semibold">English Proficiency:</span> CET4 (594)</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 flex flex-wrap gap-2">
+                                <a href="/files/CV_1.pdf" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-sky-600 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                                    Download CV
+                                </a>
+                                <a href="mailto:junjieliao327@mail.bnu.edu.cn" class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                    Contact Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-6 scroll-mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Education</h2>
+                <div class="bg-white shadow rounded-lg p-6 card-hover">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl font-bold text-white">BNU</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900">Beijing Normal University</h3>
+                            <p class="text-gray-600">B.Eng. in Data Science and Big Data Technology</p>
+                            <p class="text-sm text-gray-500 mt-1">2022 - 2026 (Expected)</p>
+                            <p class="text-sm text-gray-700 mt-2">GPA: 3.6/4.0 | CET4: 594</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Interests Section -->
+        <section id="research" class="py-6 scroll-mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Research Interests</h2>
+                <div class="space-y-4">
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <h3 class="text-lg font-semibold text-primary mb-2">LLM based AI</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Explores LLM-driven reasoning, multi-agent collaboration, and the integration of LLMs with external knowledge and environments to support complex decision-making and human-centered applications.</p>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <h3 class="text-lg font-semibold text-primary mb-2">AI for Cognitive Intelligence</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Building Cognitive Agents that can deeply understand human emotions, motivations, intentions, and moral learning. Through the collaborative reasoning of Multi-Agent Systems, provide innovative technological paths for solving complex reasoning problems and social issues.</p>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <h3 class="text-lg font-semibold text-primary mb-2">AI for Social Good</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Primarily includes real-world applications such as social media analysis, fact-checking, and ensuring the factuality and safety of Large Language Models (LLMs).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="py-6 scroll-mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Publications</h2>
+
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                    <span class="inline-block w-1 h-5 bg-primary rounded"></span>
+                    Published Papers
+                </h3>
+                <div class="space-y-4 mb-8">
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden card-hover p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium badge-primary flex-shrink-0">First Author</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-gray-900 text-sm mb-1">"Unlocking Interpretable Multimodal Affective Reasoning via Large Language Models"</h4>
+                                <p class="text-xs text-gray-600">Accepted by <span class="font-medium text-primary">Pattern Recognition (CCF B)</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden card-hover p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 flex-shrink-0">Co-author</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-gray-900 text-sm mb-1">"Multi-Agent Collaborative Reasoning via Cloud-Edge Framework"</h4>
+                                <p class="text-xs text-gray-600">Accepted by <span class="font-medium text-primary">IEEE NETWORK</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden card-hover p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 flex-shrink-0">Co-author</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-gray-900 text-sm mb-1">"Learning to Be Fair: Modeling Fairness Dynamics by Simulating Moral-Based Multi-Agent Resource Allocation"</h4>
+                                <p class="text-xs text-gray-600">Accepted by <span class="font-medium text-primary">ICLR AFAA 2026 Poster</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                    <span class="inline-block w-1 h-5 bg-sky-400 rounded"></span>
+                    Preprints & Under Review
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden card-hover p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium badge-primary flex-shrink-0">First Author</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-gray-900 text-sm mb-1">"Do We Need Role Models? Exemplar-Driven Moral Learning in Multi-Agent Simulation"</h4>
+                                <p class="text-xs text-gray-600">Under review at <span class="font-medium">ACL 2026</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden card-hover p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 flex-shrink-0">Co-author</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-gray-900 text-sm mb-1">"RL Teaches VLMs to Look: From Mechanistic Insights on Attention Shift to Efficient Adaptation"</h4>
+                                <p class="text-xs text-gray-600">Under review at <span class="font-medium">ECCV 2026</span> (EIT University — AgentRL Project)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden card-hover p-4">
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium badge-primary flex-shrink-0">First Author</span>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-gray-900 text-sm mb-1">"Cognitive Factors Transfer in Multi-Modal Language Models"</h4>
+                                <p class="text-xs text-gray-600">Submitted to <span class="font-medium">ACL 2026</span> (Westlake University AutoLab)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="research-exp" class="py-6 scroll-mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Research Experience</h2>
+                <div class="space-y-4">
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-bold text-gray-900">Cognitive Agents</h3>
+                            <span class="text-sm text-gray-500 italic">BNU</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Under the supervision of Prof. Fangwei Zhong</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Cooperated on the project: "Understanding the Motivation: Desire-Oriented Video Question Answering"</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Conducted research on modeling fairness dynamics by simulating moral-based multi-agent resource allocation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Investigated exemplar-driven moral learning within multi-agent simulations</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Sentiment Analysis and Cloud-Edge MAS</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Focused on interpretable multimodal affective reasoning and interaction-aware sentiment analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Explored multi-agent collaborative reasoning utilizing a cloud-edge framework</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Contributed to the development of multi-role datasets and adaptive fusion networks</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-bold text-gray-900">Cognitive Compute</h3>
+                            <span class="text-sm text-gray-500 italic">Westlake University AutoLab</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Researched cognitive factors transfer within Multi-Modal Language Models</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="py-6 scroll-mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Awards</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-gray-900 mb-1">iGEM 2024 Competition</h3>
+                                <p class="text-sm text-gray-700">Top 10 in Undergraduate Category, Gold Medal, Best Model Nomination</p>
+                                <p class="text-xs text-gray-500 mt-1">Leader of the model group</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-slate-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-gray-900 mb-1">Kaggle Competition</h3>
+                                <p class="text-sm text-gray-700">Silver Medal - 63rd place in "LLMs - You Can't Please Them All"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-gray-900 mb-1">BNU Scholarship</h3>
+                                <p class="text-sm text-gray-700">First Prize of the Beijing Normal University Scholarship</p>
+                                <p class="text-xs text-gray-500 mt-1">Fall 2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-orange-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-gray-900 mb-1">Mathematical Modeling</h3>
+                                <p class="text-sm text-gray-700">National College Mathematical Modeling Competition - Provincial Second Prize</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Experience Section -->
+        <section id="experience" class="py-6 scroll-mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Academic Experience</h2>
+                <div class="space-y-4">
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-bold text-gray-900">iGEM Jamboree - Paris</h3>
+                            <span class="text-sm text-gray-500 italic">October 2024</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Attended the iGEM Jamboree in Paris, a prestigious international synthetic biology conference</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Presented the team's research, engaging in global academic exchanges and gaining insights from leading researchers</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-bold text-gray-900">Westlake University Summer Research Intern</h3>
+                            <span class="text-sm text-gray-500 italic">July - August 2025</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Conducted research on Multimodal Large Language Models (MLLM) at Autolab, exploring their cognitive factors of general intelligence</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Co-authored one paper for submission</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white shadow rounded-lg p-5 card-hover">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-bold text-gray-900">Summer School at DKU</h3>
+                            <span class="text-sm text-gray-500 italic">July - August 2024</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1 flex-shrink-0">▸</span>
+                                <span>Attended a Machine Learning Summer School, studying fundamental theories including supervised and unsupervised learning, neural networks, and optimization techniques</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Practice Section -->
+        <section id="services" class="py-6 scroll-mt-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 section-title">Social Practice and Service</h2>
+                <div class="bg-white shadow rounded-lg p-5 card-hover">
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary mt-1 flex-shrink-0">•</span>
+                            <span class="text-sm text-gray-700"><span class="font-semibold">Harvard HSYLC Summit 2024</span> - Teaching Fellow</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary mt-1 flex-shrink-0">•</span>
+                            <span class="text-sm text-gray-700"><span class="font-semibold">National Situation Education Research Project</span>, Beijing Normal University</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary mt-1 flex-shrink-0">•</span>
+                            <span class="text-sm text-gray-700"><span class="font-semibold">THE 25TH ANNUAL CONFERENCE OF YABULI CHINA ENTREPRENEURS FORUM 2025</span> - Secretary</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary mt-1 flex-shrink-0">•</span>
+                            <span class="text-sm text-gray-700"><span class="font-semibold">2025-IGEM AD</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 mt-8 border-t border-slate-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-sm text-gray-500">Last updated: March 2026</p>
+                <p class="text-sm text-gray-500 mt-1">© 2026 JunJie Liao. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('border-primary', 'text-gray-900');
+                link.classList.add('border-transparent', 'text-gray-500');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.remove('border-transparent', 'text-gray-500');
+                    link.classList.add('border-primary', 'text-gray-900');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
