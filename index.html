@@ -112,11 +112,7 @@
             bottom: 0;
             width: 60px;
             height: 3px;
-            background: linear-gradient(
-                to right,
-                #a855f7,
-                #d946ef
-            );
+            background: linear-gradient(to right, #a855f7, #d946ef);
             border-radius: 2px;
         }
 
@@ -147,41 +143,10 @@
             background-clip: text;
             animation: gradientShift 3s ease infinite;
         }
-
-        .glow-card {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .glow-card::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(
-                45deg,
-                #a855f7,
-                #d946ef,
-                #c084fc
-            );
-            border-radius: 0.5rem;
-            opacity: 0;
-            transition: opacity 0.3s;
-            z-index: -1;
-        }
-
-        .glow-card:hover::before {
-            opacity: 0.2;
-        }
     </style>
 </head>
 
-<body
-    class="font-sans relative min-h-screen"
-    style="font-size: 18px;"
->
+<body class="font-sans relative min-h-screen" style="font-size: 18px;">
 
     <!-- Background -->
     <div class="fixed inset-0 z-0">
@@ -197,7 +162,6 @@
         ></div>
     </div>
 
-    <!-- Content Wrapper -->
     <div class="relative z-10">
 
         <!-- Navigation -->
@@ -210,22 +174,18 @@
 
                 <div class="flex justify-between items-center h-16">
 
-                    <div class="flex items-center">
-                        <span
-                            class="text-xl font-bold gradient-text
-                                   font-display tracking-tight"
-                        >
-                            JunJie Liao
-                        </span>
-                    </div>
-
-                    <div
-                        class="hidden sm:flex sm:items-center sm:space-x-6"
+                    <span
+                        class="text-xl font-bold gradient-text
+                               font-display tracking-tight"
                     >
+                        JunJie Liao
+                    </span>
+
+                    <div class="hidden sm:flex sm:items-center sm:space-x-6">
                         <a
                             href="#about"
-                            class="nav-link inline-flex items-center
-                                   h-16 border-b-2 border-primary
+                            class="nav-link inline-flex items-center h-16
+                                   border-b-2 border-primary
                                    text-sm font-medium text-white"
                         >
                             About
@@ -233,8 +193,8 @@
 
                         <a
                             href="#education"
-                            class="nav-link inline-flex items-center
-                                   h-16 border-b-2 border-transparent
+                            class="nav-link inline-flex items-center h-16
+                                   border-b-2 border-transparent
                                    text-sm font-medium text-gray-300
                                    hover:border-purple-400 hover:text-white"
                         >
@@ -243,8 +203,8 @@
 
                         <a
                             href="#research"
-                            class="nav-link inline-flex items-center
-                                   h-16 border-b-2 border-transparent
+                            class="nav-link inline-flex items-center h-16
+                                   border-b-2 border-transparent
                                    text-sm font-medium text-gray-300
                                    hover:border-purple-400 hover:text-white"
                         >
@@ -253,8 +213,8 @@
 
                         <a
                             href="#publications"
-                            class="nav-link inline-flex items-center
-                                   h-16 border-b-2 border-transparent
+                            class="nav-link inline-flex items-center h-16
+                                   border-b-2 border-transparent
                                    text-sm font-medium text-gray-300
                                    hover:border-purple-400 hover:text-white"
                         >
@@ -263,8 +223,8 @@
 
                         <a
                             href="#awards"
-                            class="nav-link inline-flex items-center
-                                   h-16 border-b-2 border-transparent
+                            class="nav-link inline-flex items-center h-16
+                                   border-b-2 border-transparent
                                    text-sm font-medium text-gray-300
                                    hover:border-purple-400 hover:text-white"
                         >
@@ -273,8 +233,8 @@
 
                         <a
                             href="#experience"
-                            class="nav-link inline-flex items-center
-                                   h-16 border-b-2 border-transparent
+                            class="nav-link inline-flex items-center h-16
+                                   border-b-2 border-transparent
                                    text-sm font-medium text-gray-300
                                    hover:border-purple-400 hover:text-white"
                         >
@@ -285,35 +245,26 @@
             </div>
         </nav>
 
-        <!-- Main Content -->
         <main class="pt-16">
 
-            <!-- ===================================================== -->
             <!-- About -->
-            <!-- ===================================================== -->
-
             <section id="about" class="py-8 pt-10 scroll-mt-20">
-                <div
-                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-                >
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
                     <div
                         class="bg-slate-900/70 backdrop-blur-md
                                shadow-xl rounded-lg overflow-visible
                                card-hover border border-purple-500/30"
                     >
-                        <div
-                            class="md:grid
-                                   md:grid-cols-[minmax(0,280px)_1fr]"
-                        >
+                        <div class="md:grid md:grid-cols-[minmax(0,280px)_1fr]">
 
-                            <!-- Left Sidebar -->
+                            <!-- Left -->
                             <div
                                 class="md:border-r md:border-purple-500/30
                                        md:bg-slate-800/50 p-6 md:pr-8
                                        flex flex-col items-center"
                             >
 
-                                <!-- Profile Placeholder -->
                                 <div
                                     class="h-56 w-56 relative overflow-hidden
                                            rounded-full mb-3
@@ -323,90 +274,41 @@
                                            flex items-center justify-center
                                            shadow-lg"
                                 >
-                                    <span
-                                        class="text-8xl text-white font-bold"
-                                    >
+                                    <span class="text-8xl text-white font-bold">
                                         L
                                     </span>
                                 </div>
 
-                                <!-- Basic Info -->
                                 <div
                                     class="w-full max-w-[260px]
                                            flex flex-col items-center
                                            gap-1.5 text-gray-300
                                            text-sm mt-2 mb-6"
                                 >
-                                    <p
-                                        class="inline-flex items-center
-                                               justify-center gap-2"
-                                    >
-                                        <svg
-                                            class="w-4 h-4 flex-shrink-0
-                                                   text-purple-400"
-                                            fill="currentColor"
-                                            viewBox="0 0 448 512"
-                                        >
-                                            <path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"/>
-                                        </svg>
-
+                                    <p>
                                         Beijing Normal University
                                     </p>
 
-                                    <p
-                                        class="inline-flex items-center
-                                               justify-center gap-2"
-                                    >
-                                        <svg
-                                            class="w-4 h-4 flex-shrink-0
-                                                   text-purple-400"
-                                            fill="currentColor"
-                                            viewBox="0 0 384 512"
-                                        >
-                                            <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/>
-                                        </svg>
-
+                                    <p>
                                         China
                                     </p>
 
-                                    <p
-                                        class="inline-flex items-center
-                                               justify-center gap-2"
-                                    >
-                                        <svg
-                                            class="w-4 h-4 flex-shrink-0
-                                                   text-purple-400"
-                                            fill="currentColor"
-                                            viewBox="0 0 512 512"
-                                        >
-                                            <path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"/>
-                                        </svg>
-
+                                    <p>
                                         Undergraduate
                                     </p>
                                 </div>
 
-                                <!-- Contact -->
                                 <div
-                                    class="grid grid-cols-2 gap-x-4 gap-y-2
+                                    class="grid grid-cols-2
+                                           gap-x-4 gap-y-2
                                            w-max max-w-[260px]"
                                 >
-
                                     <a
                                         href="mailto:junjieliao327@gmail.com"
                                         class="contact-item-hover text-primary
-                                               inline-flex items-center gap-2
-                                               text-sm leading-tight"
+                                               text-sm"
                                     >
-                                        <svg
-                                            class="w-4 h-4"
-                                            fill="currentColor"
-                                            viewBox="0 0 512 512"
-                                        >
-                                            <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
-                                        </svg>
-
-                                        Email
+                                        ✉ Email
                                     </a>
 
                                     <a
@@ -414,17 +316,8 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         class="contact-item-hover text-primary
-                                               inline-flex items-center gap-2
-                                               text-sm leading-tight"
+                                               text-sm"
                                     >
-                                        <svg
-                                            class="w-4 h-4"
-                                            fill="currentColor"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
-                                        </svg>
-
                                         Scholar
                                     </a>
 
@@ -433,40 +326,30 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         class="contact-item-hover text-primary
-                                               inline-flex items-center gap-2
-                                               text-sm leading-tight"
+                                               text-sm"
                                     >
-                                        <svg
-                                            class="w-4 h-4"
-                                            fill="currentColor"
-                                            viewBox="0 0 448 512"
-                                        >
-                                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
-                                        </svg>
-
                                         LinkedIn
                                     </a>
-
                                 </div>
+
                             </div>
 
-                            <!-- Main About Text -->
+                            <!-- About Content -->
                             <div class="p-6 md:p-8 md:pl-8">
 
                                 <div
-                                    class="text-3xl font-bold text-white mb-2"
+                                    class="text-3xl font-bold
+                                           text-white mb-2"
                                 >
                                     Good to see you!
                                 </div>
 
                                 <p
-                                    class="text-sm text-gray-300 mb-4
-                                           leading-relaxed"
+                                    class="text-sm text-gray-300
+                                           mb-4 leading-relaxed"
                                 >
                                     I am
-                                    <span
-                                        class="font-semibold gradient-text"
-                                    >
+                                    <span class="font-semibold gradient-text">
                                         JunJie Liao
                                     </span>,
                                     an undergraduate student passionate about
@@ -476,27 +359,20 @@
                                     interpretable multimodal reasoning, and AI
                                     for social good.
                                 </p>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ===================================================== -->
             <!-- Education -->
-            <!-- ===================================================== -->
-
-            <section
-                id="education"
-                class="py-6 scroll-mt-20"
-            >
-                <div
-                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-                >
+            <section id="education" class="py-6 scroll-mt-20">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <h2
-                        class="text-2xl font-bold text-white mb-6
-                               section-title"
+                        class="text-2xl font-bold text-white
+                               mb-6 section-title"
                     >
                         Education
                     </h2>
@@ -515,35 +391,26 @@
                                        rounded-lg flex items-center
                                        justify-center shadow-md"
                             >
-                                <span
-                                    class="text-2xl font-bold text-white"
-                                >
+                                <span class="text-2xl font-bold text-white">
                                     BNU
                                 </span>
                             </div>
 
                             <div class="flex-1">
 
-                                <h3
-                                    class="text-xl font-bold text-white"
-                                >
+                                <h3 class="text-xl font-bold text-white">
                                     Beijing Normal University
                                 </h3>
 
                                 <p class="text-gray-300">
-                                    B.Eng. in Data Science and Big Data
-                                    Technology
+                                    B.Eng. in Data Science and Big Data Technology
                                 </p>
 
-                                <p
-                                    class="text-sm text-gray-400 mt-1"
-                                >
-                                    2022 - 2026
+                                <p class="text-sm text-gray-400 mt-1">
+                                    2023 - 2027 (Expected)
                                 </p>
 
-                                <p
-                                    class="text-sm text-gray-300 mt-2"
-                                >
+                                <p class="text-sm text-gray-300 mt-2">
                                     GPA: 3.6/4.0 | CET4: 594
                                 </p>
 
@@ -553,21 +420,13 @@
                 </div>
             </section>
 
-            <!-- ===================================================== -->
             <!-- Research Interests -->
-            <!-- ===================================================== -->
-
-            <section
-                id="research"
-                class="py-6 scroll-mt-20"
-            >
-                <div
-                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-                >
+            <section id="research" class="py-6 scroll-mt-20">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <h2
-                        class="text-2xl font-bold text-white mb-6
-                               section-title"
+                        class="text-2xl font-bold text-white
+                               mb-6 section-title"
                     >
                         Research Interests
                     </h2>
@@ -586,10 +445,7 @@
                                 LLM-based AI
                             </h3>
 
-                            <p
-                                class="text-base text-gray-300
-                                       leading-relaxed"
-                            >
+                            <p class="text-base text-gray-300 leading-relaxed">
                                 Explores LLM-driven reasoning, multi-agent
                                 collaboration, and the integration of LLMs
                                 with external knowledge and environments to
@@ -610,17 +466,14 @@
                                 AI for Cognitive Intelligence
                             </h3>
 
-                            <p
-                                class="text-base text-gray-300
-                                       leading-relaxed"
-                            >
+                            <p class="text-base text-gray-300 leading-relaxed">
                                 Building Cognitive Agents that can deeply
                                 understand human emotions, motivations,
                                 intentions, and moral learning. Through the
-                                collaborative reasoning of Multi-Agent
-                                Systems, provide innovative technological
-                                paths for solving complex reasoning problems
-                                and social issues.
+                                collaborative reasoning of Multi-Agent Systems,
+                                provide innovative technological paths for
+                                solving complex reasoning problems and
+                                social issues.
                             </p>
                         </div>
 
@@ -636,10 +489,7 @@
                                 AI for Social Good
                             </h3>
 
-                            <p
-                                class="text-base text-gray-300
-                                       leading-relaxed"
-                            >
+                            <p class="text-base text-gray-300 leading-relaxed">
                                 Primarily includes real-world applications
                                 such as social media analysis, fact-checking,
                                 and ensuring the factuality and safety of
@@ -651,29 +501,20 @@
                 </div>
             </section>
 
-            <!-- ===================================================== -->
             <!-- Publications -->
-            <!-- ===================================================== -->
-
-            <section
-                id="publications"
-                class="py-6 scroll-mt-20"
-            >
-                <div
-                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-                >
+            <section id="publications" class="py-6 scroll-mt-20">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <h2
-                        class="text-2xl font-bold text-white mb-6
-                               section-title"
+                        class="text-2xl font-bold text-white
+                               mb-6 section-title"
                     >
                         Publications
                     </h2>
 
-                    <!-- Published / Accepted Papers -->
                     <h3
-                        class="text-lg font-semibold text-gray-200 mb-4
-                               flex items-center gap-2"
+                        class="text-lg font-semibold text-gray-200
+                               mb-4 flex items-center gap-2"
                     >
                         <span
                             class="inline-block w-1 h-5
@@ -684,37 +525,30 @@
 
                     <div class="space-y-4 mb-8">
 
-                        <!-- ACL 2026 -->
+                        <!-- 1 -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            badge-primary flex-shrink-0"
                                 >
                                     First Author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “How do Role Models Shape Collective
                                         Morality? Exemplar-Driven Moral
                                         Learning in Multi-Agent Simulation”
                                     </h4>
 
-                                    <p
-                                        class="text-sm text-gray-400 mb-1"
-                                    >
+                                    <p class="text-sm text-gray-400 mb-1">
                                         Junjie Liao, Huacong Tang,
                                         Zhou Ziheng, Yizhou Wang,
                                         Fangwei Zhong
@@ -723,48 +557,40 @@
                                     <p class="text-sm text-gray-300">
                                         Accepted by
                                         <span
-                                            class="font-medium
-                                                   text-purple-300"
+                                            class="font-medium text-purple-300"
                                         >
                                             ACL 2026 Main Conference
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- Pattern Recognition -->
+                        <!-- 2 -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            badge-primary flex-shrink-0"
                                 >
                                     First Author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “Unlocking Interpretable Multimodal
                                         Affective Reasoning via Large
                                         Language Models”
                                     </h4>
 
-                                    <p
-                                        class="text-sm text-gray-400 mb-1"
-                                    >
+                                    <p class="text-sm text-gray-400 mb-1">
                                         Junjie Liao, Jiandian Zeng,
                                         Binbin Song, Mengting Zhou,
                                         Xiaopeng Fan, Tian Wang
@@ -773,56 +599,47 @@
                                     <p class="text-sm text-gray-300">
                                         Accepted by
                                         <span
-                                            class="font-medium
-                                                   text-purple-300"
+                                            class="font-medium text-purple-300"
                                         >
                                             Pattern Recognition (CCF B)
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- EMNLP Findings -->
+                        <!-- 3 -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            badge-primary flex-shrink-0"
                                 >
                                     First Author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “Retrieve Few, Verify Many:
                                         Segment-Level Evidence Reuse for
                                         Long-Form Factuality Assessment”
                                     </h4>
 
-                                    <p
-                                        class="text-sm text-gray-400 mb-1"
-                                    >
+                                    <p class="text-sm text-gray-400 mb-1">
                                         Junjie Liao, Yuxia Wang
                                     </p>
 
                                     <p class="text-sm text-gray-300">
                                         Accepted by
                                         <span
-                                            class="font-medium
-                                                   text-purple-300"
+                                            class="font-medium text-purple-300"
                                         >
                                             EMNLP 2026 Findings
                                         </span>
@@ -830,22 +647,21 @@
                                             · Completed at INSAIT
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- EMNLP Main -->
+                        <!-- 4 -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            bg-slate-700 text-slate-200
                                            flex-shrink-0"
@@ -853,22 +669,17 @@
                                     Co-author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “MedSNIP: Building and Benchmarking
-                                        Snippet-Level Granularity for Medical
-                                        Fact Verification”
+                                        Snippet-Level Granularity for
+                                        Medical Fact Verification”
                                     </h4>
 
                                     <p class="text-sm text-gray-300">
                                         Accepted by
                                         <span
-                                            class="font-medium
-                                                   text-purple-300"
+                                            class="font-medium text-purple-300"
                                         >
                                             EMNLP 2026 Main Conference
                                         </span>
@@ -876,22 +687,21 @@
                                             · Completed at INSAIT
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- IEEE NETWORK -->
+                        <!-- 5 -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            bg-slate-700 text-slate-200
                                            flex-shrink-0"
@@ -899,12 +709,8 @@
                                     Co-author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “Multi-Agent Collaborative Reasoning
                                         via Cloud-Edge Framework”
                                     </h4>
@@ -912,28 +718,26 @@
                                     <p class="text-sm text-gray-300">
                                         Accepted by
                                         <span
-                                            class="font-medium
-                                                   text-purple-300"
+                                            class="font-medium text-purple-300"
                                         >
                                             IEEE Network (JCR Q1)
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- ICLR AFAA -->
+                        <!-- 6 -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            bg-slate-700 text-slate-200
                                            flex-shrink-0"
@@ -941,12 +745,8 @@
                                     Co-author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “Learning to Be Fair: Modeling
                                         Fairness Dynamics by Simulating
                                         Moral-Based Multi-Agent Resource
@@ -956,40 +756,34 @@
                                     <p class="text-sm text-gray-300">
                                         Accepted by
                                         <span
-                                            class="font-medium
-                                                   text-purple-300"
+                                            class="font-medium text-purple-300"
                                         >
                                             ICLR AFAA 2026 Poster
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- ICI -->
+                        <!-- 7 -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            badge-primary flex-shrink-0"
                                 >
                                     First Author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “Adaptive Fusion Network for
                                         Consistent Multimodal Sentiment
                                         Analysis”
@@ -998,14 +792,13 @@
                                     <p class="text-sm text-gray-300">
                                         Accepted by
                                         <span
-                                            class="font-medium
-                                                   text-purple-300"
+                                            class="font-medium text-purple-300"
                                         >
                                             ICI 2026 Poster
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
@@ -1013,8 +806,8 @@
 
                     <!-- Preprints -->
                     <h3
-                        class="text-lg font-semibold text-gray-200 mb-4
-                               flex items-center gap-2"
+                        class="text-lg font-semibold text-gray-200
+                               mb-4 flex items-center gap-2"
                     >
                         <span
                             class="inline-block w-1 h-5
@@ -1025,17 +818,15 @@
 
                     <div class="space-y-4">
 
-                        <!-- AgentRL -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            bg-slate-700 text-slate-200
                                            flex-shrink-0"
@@ -1043,20 +834,14 @@
                                     Co-author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “RL Teaches VLMs to Look:
                                         From Mechanistic Insights on Attention
                                         Shift to Efficient Adaptation”
                                     </h4>
 
-                                    <p
-                                        class="text-sm text-gray-400 mb-1"
-                                    >
+                                    <p class="text-sm text-gray-400 mb-1">
                                         Ziqian Zhang, Junjie Liao,
                                         Zhining Zhang, Wentao Zhu
                                     </p>
@@ -1068,41 +853,33 @@
                                             AgentRL Project
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- Westlake -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    rounded-xl border border-purple-500/30
-                                   shadow-xl overflow-hidden card-hover p-4"
+                                   shadow-xl card-hover p-4"
                         >
                             <div class="flex items-start gap-3">
 
                                 <span
-                                    class="inline-flex items-center
-                                           px-3 py-1 rounded-full
+                                    class="px-3 py-1 rounded-full
                                            text-xs font-medium
                                            badge-primary flex-shrink-0"
                                 >
                                     First Author
                                 </span>
 
-                                <div class="flex-1 min-w-0">
-
-                                    <h4
-                                        class="font-semibold text-white
-                                               text-base mb-1"
-                                    >
+                                <div>
+                                    <h4 class="font-semibold text-white mb-1">
                                         “Cognitive Factors Transfer in
                                         Multi-Modal Language Models”
                                     </h4>
 
-                                    <p
-                                        class="text-sm text-gray-400 mb-1"
-                                    >
+                                    <p class="text-sm text-gray-400 mb-1">
                                         Junjie Liao, Wei Song, Kaicheng Yu
                                     </p>
 
@@ -1113,79 +890,51 @@
                                             AutoLab
                                         </span>
                                     </p>
-
                                 </div>
+
                             </div>
                         </div>
 
                     </div>
+
                 </div>
             </section>
 
-            <!-- ===================================================== -->
             <!-- Research Experience -->
-            <!-- ===================================================== -->
-
-            <section
-                id="research-exp"
-                class="py-6 scroll-mt-20"
-            >
-                <div
-                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-                >
+            <section id="research-exp" class="py-6 scroll-mt-20">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <h2
-                        class="text-2xl font-bold text-white mb-6
-                               section-title"
+                        class="text-2xl font-bold text-white
+                               mb-6 section-title"
                     >
                         Research Experience
                     </h2>
 
                     <div class="space-y-4">
 
-                        <!-- Cognitive Agents -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div
-                                class="flex justify-between
-                                       items-start mb-3"
-                            >
-                                <h3
-                                    class="text-lg font-bold text-white"
-                                >
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-lg font-bold text-white">
                                     Cognitive Agents
                                 </h3>
 
-                                <span
-                                    class="text-sm text-gray-400 italic"
-                                >
+                                <span class="text-sm text-gray-400 italic">
                                     BNU
                                 </span>
                             </div>
 
-                            <p
-                                class="text-sm text-gray-400 mb-3"
-                            >
-                                Under the supervision of
-                                Prof. Fangwei Zhong
+                            <p class="text-sm text-gray-400 mb-3">
+                                Under the supervision of Prof. Fangwei Zhong
                             </p>
 
-                            <ul
-                                class="space-y-2 text-sm text-gray-300"
-                            >
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Cooperated on the project:
                                         “Understanding the Motivation:
@@ -1194,16 +943,8 @@
                                     </span>
                                 </li>
 
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Conducted research on modeling
                                         fairness dynamics by simulating
@@ -1212,51 +953,29 @@
                                     </span>
                                 </li>
 
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
-                                        Investigated exemplar-driven moral
-                                        learning within multi-agent
+                                        Investigated exemplar-driven
+                                        moral learning within multi-agent
                                         simulations
                                     </span>
                                 </li>
                             </ul>
                         </div>
 
-                        <!-- Sentiment -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-
-                            <h3
-                                class="text-lg font-bold text-white mb-3"
-                            >
+                            <h3 class="text-lg font-bold text-white mb-3">
                                 Sentiment Analysis and Cloud-Edge MAS
                             </h3>
 
-                            <ul
-                                class="space-y-2 text-sm text-gray-300"
-                            >
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Focused on interpretable multimodal
                                         affective reasoning and
@@ -1264,16 +983,8 @@
                                     </span>
                                 </li>
 
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Explored multi-agent collaborative
                                         reasoning utilizing a cloud-edge
@@ -1281,16 +992,8 @@
                                     </span>
                                 </li>
 
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Contributed to the development of
                                         multi-role datasets and adaptive
@@ -1300,42 +1003,24 @@
                             </ul>
                         </div>
 
-                        <!-- Cognitive Compute -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div
-                                class="flex justify-between
-                                       items-start mb-3"
-                            >
-                                <h3
-                                    class="text-lg font-bold text-white"
-                                >
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-lg font-bold text-white">
                                     Cognitive Compute
                                 </h3>
 
-                                <span
-                                    class="text-sm text-gray-400 italic"
-                                >
+                                <span class="text-sm text-gray-400 italic">
                                     Westlake University AutoLab
                                 </span>
                             </div>
 
-                            <ul
-                                class="space-y-2 text-sm text-gray-300"
-                            >
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Researched cognitive factors transfer
                                         within Multi-Modal Language Models
@@ -1348,281 +1033,125 @@
                 </div>
             </section>
 
-            <!-- ===================================================== -->
-            <!-- Honors & Awards -->
-            <!-- ===================================================== -->
-
-            <section
-                id="awards"
-                class="py-6 scroll-mt-20"
-            >
-                <div
-                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-                >
+            <!-- Awards -->
+            <section id="awards" class="py-6 scroll-mt-20">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <h2
-                        class="text-2xl font-bold text-white mb-6
-                               section-title"
+                        class="text-2xl font-bold text-white
+                               mb-6 section-title"
                     >
                         Honors & Awards
                     </h2>
 
-                    <div
-                        class="grid grid-cols-1 md:grid-cols-2 gap-4"
-                    >
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                        <!-- iGEM -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div class="flex items-start gap-3">
+                            <h3 class="font-bold text-white mb-1">
+                                iGEM 2024 Competition
+                            </h3>
 
-                                <div
-                                    class="flex-shrink-0 w-10 h-10
-                                           bg-purple-100 rounded-lg
-                                           flex items-center justify-center"
-                                >
-                                    <svg
-                                        class="w-6 h-6 text-purple-600"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                    >
-                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                    </svg>
-                                </div>
+                            <p class="text-sm text-gray-300">
+                                Top 10 in the Undergraduate Category,
+                                Gold Medal, Best Model Nomination
+                            </p>
 
-                                <div class="flex-1">
-
-                                    <h3
-                                        class="font-bold text-white mb-1"
-                                    >
-                                        iGEM 2024 Competition
-                                    </h3>
-
-                                    <p
-                                        class="text-sm text-gray-300"
-                                    >
-                                        Top 10 in the Undergraduate Category,
-                                        Gold Medal, Best Model Nomination
-                                    </p>
-
-                                    <p
-                                        class="text-xs text-gray-400 mt-1"
-                                    >
-                                        Leader of the Model Group
-                                    </p>
-
-                                </div>
-                            </div>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Leader of the Model Group
+                            </p>
                         </div>
 
-                        <!-- BNU Scholarship -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div class="flex items-start gap-3">
+                            <h3 class="font-bold text-white mb-1">
+                                BNU Scholarship
+                            </h3>
 
-                                <div
-                                    class="flex-shrink-0 w-10 h-10
-                                           bg-fuchsia-100 rounded-lg
-                                           flex items-center justify-center"
-                                >
-                                    <svg
-                                        class="w-6 h-6 text-fuchsia-600"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                    >
-                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
-                                    </svg>
-                                </div>
+                            <p class="text-sm text-gray-300">
+                                First Prize of the Beijing Normal
+                                University Scholarship
+                            </p>
 
-                                <div class="flex-1">
-
-                                    <h3
-                                        class="font-bold text-white mb-1"
-                                    >
-                                        BNU Scholarship
-                                    </h3>
-
-                                    <p
-                                        class="text-sm text-gray-300"
-                                    >
-                                        First Prize of the Beijing Normal
-                                        University Scholarship
-                                    </p>
-
-                                    <p
-                                        class="text-xs text-gray-400 mt-1"
-                                    >
-                                        Fall 2024
-                                    </p>
-
-                                </div>
-                            </div>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Fall 2024
+                            </p>
                         </div>
 
-                        <!-- Competition Excellence -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div class="flex items-start gap-3">
+                            <h3 class="font-bold text-white mb-1">
+                                Special Scholarship for Competition Excellence
+                            </h3>
 
-                                <div
-                                    class="flex-shrink-0 w-10 h-10
-                                           bg-violet-100 rounded-lg
-                                           flex items-center justify-center"
-                                >
-                                    <svg
-                                        class="w-6 h-6 text-violet-600"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd"
-                                        />
-                                    </svg>
-                                </div>
+                            <p class="text-sm text-gray-300">
+                                Grand Prize, Beijing Normal University
+                            </p>
 
-                                <div class="flex-1">
-
-                                    <h3
-                                        class="font-bold text-white mb-1"
-                                    >
-                                        Special Scholarship for Competition
-                                        Excellence
-                                    </h3>
-
-                                    <p
-                                        class="text-sm text-gray-300"
-                                    >
-                                        Grand Prize, Beijing Normal
-                                        University
-                                    </p>
-
-                                    <p
-                                        class="text-xs text-gray-400 mt-1"
-                                    >
-                                        Fall 2025
-                                    </p>
-
-                                </div>
-                            </div>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Fall 2025
+                            </p>
                         </div>
 
-                        <!-- Mathematical Modeling -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div class="flex items-start gap-3">
+                            <h3 class="font-bold text-white mb-1">
+                                National College Mathematical
+                                Modeling Competition
+                            </h3>
 
-                                <div
-                                    class="flex-shrink-0 w-10 h-10
-                                           bg-purple-100 rounded-lg
-                                           flex items-center justify-center"
-                                >
-                                    <svg
-                                        class="w-6 h-6 text-purple-600"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                                            clip-rule="evenodd"
-                                        />
-                                    </svg>
-                                </div>
-
-                                <div class="flex-1">
-
-                                    <h3
-                                        class="font-bold text-white mb-1"
-                                    >
-                                        National College Mathematical
-                                        Modeling Competition
-                                    </h3>
-
-                                    <p
-                                        class="text-sm text-gray-300"
-                                    >
-                                        Provincial Second Prize
-                                    </p>
-
-                                </div>
-                            </div>
+                            <p class="text-sm text-gray-300">
+                                Provincial Second Prize
+                            </p>
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <!-- ===================================================== -->
             <!-- Academic Experience -->
-            <!-- ===================================================== -->
-
-            <section
-                id="experience"
-                class="py-6 scroll-mt-20"
-            >
-                <div
-                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-                >
+            <section id="experience" class="py-6 scroll-mt-20">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <h2
-                        class="text-2xl font-bold text-white mb-6
-                               section-title"
+                        class="text-2xl font-bold text-white
+                               mb-6 section-title"
                     >
                         Academic Experience
                     </h2>
 
                     <div class="space-y-4">
 
-                        <!-- iGEM Paris -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div
-                                class="flex justify-between
-                                       items-start mb-3"
-                            >
-                                <h3
-                                    class="text-lg font-bold text-white"
-                                >
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-lg font-bold text-white">
                                     iGEM Jamboree - Paris
                                 </h3>
 
-                                <span
-                                    class="text-sm text-gray-400 italic"
-                                >
+                                <span class="text-sm text-gray-400 italic">
                                     October 2024
                                 </span>
                             </div>
 
-                            <ul
-                                class="space-y-2 text-sm text-gray-300"
-                            >
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Attended the iGEM Jamboree in Paris,
                                         a prestigious international synthetic
@@ -1630,16 +1159,8 @@
                                     </span>
                                 </li>
 
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Presented the team's research,
                                         engaging in global academic exchanges
@@ -1650,42 +1171,24 @@
                             </ul>
                         </div>
 
-                        <!-- Westlake -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div
-                                class="flex justify-between
-                                       items-start mb-3"
-                            >
-                                <h3
-                                    class="text-lg font-bold text-white"
-                                >
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-lg font-bold text-white">
                                     Westlake University Summer Research Intern
                                 </h3>
 
-                                <span
-                                    class="text-sm text-gray-400 italic"
-                                >
+                                <span class="text-sm text-gray-400 italic">
                                     July - August 2025
                                 </span>
                             </div>
 
-                            <ul
-                                class="space-y-2 text-sm text-gray-300"
-                            >
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Conducted research on Multimodal
                                         Large Language Models (MLLM) at
@@ -1694,16 +1197,8 @@
                                     </span>
                                 </li>
 
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Co-authored one paper for submission
                                     </span>
@@ -1711,42 +1206,24 @@
                             </ul>
                         </div>
 
-                        <!-- DKU -->
                         <div
                             class="bg-slate-900/70 backdrop-blur-md
                                    shadow-xl rounded-lg p-5
                                    card-hover border border-purple-500/30"
                         >
-                            <div
-                                class="flex justify-between
-                                       items-start mb-3"
-                            >
-                                <h3
-                                    class="text-lg font-bold text-white"
-                                >
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-lg font-bold text-white">
                                     Summer School at DKU
                                 </h3>
 
-                                <span
-                                    class="text-sm text-gray-400 italic"
-                                >
+                                <span class="text-sm text-gray-400 italic">
                                     July - August 2024
                                 </span>
                             </div>
 
-                            <ul
-                                class="space-y-2 text-sm text-gray-300"
-                            >
-                                <li
-                                    class="flex items-start gap-2"
-                                >
-                                    <span
-                                        class="text-primary mt-1
-                                               flex-shrink-0"
-                                    >
-                                        ▸
-                                    </span>
-
+                            <ul class="space-y-2 text-sm text-gray-300">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-primary">▸</span>
                                     <span>
                                         Attended a Machine Learning Summer
                                         School, studying fundamental theories
@@ -1762,21 +1239,13 @@
                 </div>
             </section>
 
-            <!-- ===================================================== -->
             <!-- Social Practice -->
-            <!-- ===================================================== -->
-
-            <section
-                id="services"
-                class="py-6 scroll-mt-20"
-            >
-                <div
-                    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-                >
+            <section id="services" class="py-6 scroll-mt-20">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     <h2
-                        class="text-2xl font-bold text-white mb-6
-                               section-title"
+                        class="text-2xl font-bold text-white
+                               mb-6 section-title"
                     >
                         Social Practice and Service
                     </h2>
@@ -1789,12 +1258,7 @@
                         <ul class="space-y-3">
 
                             <li class="flex items-start gap-3">
-                                <span
-                                    class="text-primary mt-1 flex-shrink-0"
-                                >
-                                    •
-                                </span>
-
+                                <span class="text-primary">•</span>
                                 <span class="text-sm text-gray-300">
                                     <span class="font-semibold">
                                         Harvard HSYLC Summit 2024
@@ -1804,12 +1268,7 @@
                             </li>
 
                             <li class="flex items-start gap-3">
-                                <span
-                                    class="text-primary mt-1 flex-shrink-0"
-                                >
-                                    •
-                                </span>
-
+                                <span class="text-primary">•</span>
                                 <span class="text-sm text-gray-300">
                                     <span class="font-semibold">
                                         National Situation Education
@@ -1820,28 +1279,18 @@
                             </li>
 
                             <li class="flex items-start gap-3">
-                                <span
-                                    class="text-primary mt-1 flex-shrink-0"
-                                >
-                                    •
-                                </span>
-
+                                <span class="text-primary">•</span>
                                 <span class="text-sm text-gray-300">
                                     <span class="font-semibold">
-                                        The 25th Annual Conference of Yabuli
-                                        China Entrepreneurs Forum 2025
+                                        The 25th Annual Conference of
+                                        Yabuli China Entrepreneurs Forum 2025
                                     </span>
                                     - Secretary
                                 </span>
                             </li>
 
                             <li class="flex items-start gap-3">
-                                <span
-                                    class="text-primary mt-1 flex-shrink-0"
-                                >
-                                    •
-                                </span>
-
+                                <span class="text-primary">•</span>
                                 <span class="text-sm text-gray-300">
                                     <span class="font-semibold">
                                         2025 iGEM AD
@@ -1854,13 +1303,8 @@
                 </div>
             </section>
 
-            <!-- ===================================================== -->
             <!-- Footer -->
-            <!-- ===================================================== -->
-
-            <footer
-                class="py-8 mt-8 border-t border-purple-500/30"
-            >
+            <footer class="py-8 mt-8 border-t border-purple-500/30">
                 <div
                     class="max-w-6xl mx-auto px-4
                            sm:px-6 lg:px-8 text-center"
@@ -1879,27 +1323,25 @@
     </div>
 
     <script>
-        // Smooth scroll for navigation links
-        document
-            .querySelectorAll('a[href^="#"]')
-            .forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-                    const target = document.querySelector(
-                        this.getAttribute('href')
-                    );
+                const target = document.querySelector(
+                    this.getAttribute('href')
+                );
 
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
+        });
 
-        // Update active navigation link on scroll
+        // Active navigation
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-link');
 
